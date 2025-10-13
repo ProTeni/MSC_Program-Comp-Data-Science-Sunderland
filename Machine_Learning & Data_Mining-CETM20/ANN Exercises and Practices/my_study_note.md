@@ -380,3 +380,16 @@ def bn_batch_size_check(batch_size):
 
 
 [Second Read on ANN](https://www.geeksforgeeks.org/machine-learning/introduction-to-ann-set-4-network-architectures/)
+
+
+----
+import os
+os.environ['TF_CPP_MIN_LOG_LEVEL'] = '3' 
+We can get rid of those pesky info / warning messages which tensorflow outputs and clogs up our output with the following. Make sure to do this prior to importing tensorflow.
+
+In detail:
+
+* 0 = all messages are logged (default behavior)
+* 1 = INFO messages are not printed
+* 2 = INFO and WARNING messages are not printed
+* 3 = INFO, WARNING, and ERROR messages are not printed
